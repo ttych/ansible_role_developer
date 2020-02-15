@@ -1,0 +1,11 @@
+---
+
+- name: include ruby variables
+  include_vars:
+    dir: vars
+    files_matching: ruby.yml
+
+- name: install ruby dependencies
+  package:
+    name: "{{ ruby_dependencies[ansible_distribution]|d([]) }}"
+    state: 'present'

@@ -1,2 +1,5 @@
 ---
-# defaults file for ansible_role_developer
+want_developer: false
+
+want_ruby_developer: true
+want_python_developer: true

@@ -1,0 +1,8 @@
+---
+
+ruby_dependencies:
+  Ubuntu:
+    - libreadline-dev
+    - libssl-dev
+    - libsqlite3-dev
+    - zlib1g-dev

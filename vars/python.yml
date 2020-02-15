@@ -1,0 +1,11 @@
+---
+
+python_dependencies:
+  Ubuntu:
+    - libreadline-dev
+    - libssl-dev
+    - libffi-dev
+    - tk-dev
+    - libsqlite3-dev
+    - libbz2-dev
+

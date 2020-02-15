@@ -1,2 +1,10 @@
 ---
-# tasks file for ansible_role_developer
+
+- block:
+    - include_tasks: ruby_developer.yml
+      when: want_ruby_developer
+
+    - include_tasks: python_developer.yml
+      when: want_python_developer
+
+  when: want_developer

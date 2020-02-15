@@ -1,0 +1,11 @@
+---
+
+- name: include python variables
+  include_vars:
+    dir: vars
+    files_matching: python.yml
+
+- name: install python dependencies
+  package:
+    name: "{{ python_dependencies[ansible_distribution]|d([]) }}"
+    state: 'present'
